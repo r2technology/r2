@@ -32,17 +32,17 @@ $this->title = "r2 technology";
     <?php
     NavBar::begin([
         'brandLabel' => 'r2',
-        'brandUrl' => '/web/',
+        'brandUrl' => '/',
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Inicio', 'url' => ['#intro']],
-        ['label' => 'Quienes Somos', 'url' => ['#about']],
-        ['label' => 'Nuestros Servicios', 'url' => ['#service']],
-        ['label' => 'Clientes', 'url' => ['#client']],
-        ['label' => 'Contactanos', 'url' => ['#contact']],
+        ['label' => 'Inicio', 'url' => ['/']],
+        ['label' => 'Quienes Somos', 'url' => ['/']],
+        ['label' => 'Nuestros Servicios', 'url' => ['/']],
+        ['label' => 'Clientes', 'url' => ['/']],
+        ['label' => 'Contactanos', 'url' => ['contact']],
     ];
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
@@ -52,9 +52,6 @@ $this->title = "r2 technology";
     ?>
 
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
@@ -63,8 +60,7 @@ $this->title = "r2 technology";
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; r2technology <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right"></p>
     </div>
 </footer>
    

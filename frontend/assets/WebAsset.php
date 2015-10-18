@@ -14,6 +14,7 @@ class WebAsset extends AssetBundle
 //        'css/animate.css',
 //        'css/style.css',
 //        'css/default.css',
+        'css/site.css',
         'css/web.css',
     ];
     public $js = [

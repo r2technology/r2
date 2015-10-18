@@ -13,6 +13,10 @@ return [
                 'module/<module:\w+>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>', 
             ],
         ],
+        'user' => [
+            'identityClass' => 'app\models\User',
+            'enableAutoLogin' => true,
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
