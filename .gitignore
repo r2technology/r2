@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # yii console command
 /yii
 
@@ -27,13 +26,6 @@ composer.phar
 
 # phpunit itself is not needed
 phpunit.phar
+
 # local phpunit config
 /phpunit.xml
-=======
-assets/*
-!assets/.gitignore
-protected/runtime/*
-!protected/runtime/.gitignore
-protected/data/*.db
-themes/classic/views/
->>>>>>> ad4e91d1d324192807404dfe82fd150abd21371f
